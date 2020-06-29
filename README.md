@@ -14,7 +14,8 @@ file description
 - `call_provideDiagnosisKeys_serial.js` - similar to previous one, but execute next call only when previous one was successful
 
 ##### com.google.android.gms.persistent
-- `trace_exception.js` - capture stack trace of exception inside GMS
+- `trace_exception.js` - capture stack trace of exception inside GMS (Pipe is closed)
+- `trace_all_exceptions.js` - trace all exceptions initialized with string
 - `trace_pipe.js` - monitor operations with PipedInputStream / PipedOutputStream inside GMS
 
 
@@ -27,6 +28,7 @@ file description
 - `errors_vs_delay.png` - output of `plot_errors_vs_delay.py`
 - `adb_bugreport.txt` - full bug report which captures ApiException(10) [not published on GitHub]
 - `stack_trace.txt` - stack trace of "Pipe is closed" error, result of `trace_exception.js`
+- `all_exceptions.txt` - result of `trace_all_exceptions.js`
 - `pipes_0ms_delay.txt` - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay
 - `pipes_10000ms_delay.txt` - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 10000 ms delay
 

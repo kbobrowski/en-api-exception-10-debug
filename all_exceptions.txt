@@ -1,0 +1,3 @@
+Exception(msg=Invalid file header length)
+Exception(msg=Pipe is closed)
+Exception(msg=Unable to validate key file signature: Pipe is closed)
