@@ -1,0 +1,28 @@
+[trace_pipe.js @ com.google.android.gms.persistent]
+trace_pipe.js
+6059537: java.io.PipedOutputStream@89ce1e4 <- PipedOutputStream()
+6059542: java.io.PipedInputStream@1f7d64d <- PipedInputStream(output_stream=java.io.PipedOutputStream@89ce1e4)
+6059548: java.io.PipedInputStream@1f7d64d :: read(buffer=[object Object]) = 16
+6059906: java.io.PipedOutputStream@89ce1e4 :: close()
+6059916: java.io.PipedInputStream@1f7d64d :: close()
+6060201: java.io.PipedOutputStream@ba23981 <- PipedOutputStream()
+6060218: java.io.PipedInputStream@c5dfa26 <- PipedInputStream(output_stream=java.io.PipedOutputStream@ba23981)
+6060225: java.io.PipedInputStream@c5dfa26 :: read(buffer=[object Object]) = 16
+6060487: java.io.PipedOutputStream@ba23981 :: close()
+6060497: java.io.PipedInputStream@c5dfa26 :: close()
+6060753: java.io.PipedOutputStream@f955498 <- PipedOutputStream()
+6060757: java.io.PipedInputStream@7eb84f1 <- PipedInputStream(output_stream=java.io.PipedOutputStream@f955498)
+6060762: java.io.PipedInputStream@7eb84f1 :: read(buffer=[object Object]) = 5
+6060770: java.io.PipedInputStream@7eb84f1 :: close()
+6060774: java.io.PipedOutputStream@f955498 :: close()
+
+[call_provideDiagnosisKeys_serial.js @ de.rki.coronawarnapp]
+creating dk array
+creating default exposure configuration
+looking for en instance
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
