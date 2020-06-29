@@ -1,0 +1,126 @@
+[trace_pipe.js @ com.google.android.gms.persistent]
+7640819: java.io.PipedOutputStream@6c83755 <- PipedOutputStream()
+7640834: java.io.PipedInputStream@4d9a56a <- PipedInputStream(output_stream=java.io.PipedOutputStream@6c83755)
+7640950: java.io.PipedOutputStream@6c83755 :: close()
+7640957: java.io.PipedInputStream@4d9a56a :: close()
+7651045: java.io.PipedOutputStream@ada204b <- PipedOutputStream()
+7651051: java.io.PipedInputStream@9b8ca28 <- PipedInputStream(output_stream=java.io.PipedOutputStream@ada204b)
+7651102: java.io.PipedOutputStream@ada204b :: close()
+7651106: java.io.PipedInputStream@9b8ca28 :: close()
+7661287: java.io.PipedOutputStream@ba80435 <- PipedOutputStream()
+7661292: java.io.PipedInputStream@dd020ca <- PipedInputStream(output_stream=java.io.PipedOutputStream@ba80435)
+7661355: java.io.PipedOutputStream@ba80435 :: close()
+7661366: java.io.PipedInputStream@dd020ca :: close()
+7671491: java.io.PipedOutputStream@f21f20f <- PipedOutputStream()
+7671509: java.io.PipedInputStream@fced29c <- PipedInputStream(output_stream=java.io.PipedOutputStream@f21f20f)
+7671561: java.io.PipedOutputStream@f21f20f :: close()
+7671566: java.io.PipedInputStream@fced29c :: close()
+7681670: java.io.PipedOutputStream@bf0f859 <- PipedOutputStream()
+7681675: java.io.PipedInputStream@f1b0c1e <- PipedInputStream(output_stream=java.io.PipedOutputStream@bf0f859)
+7681720: java.io.PipedOutputStream@bf0f859 :: close()
+7681727: java.io.PipedInputStream@f1b0c1e :: close()
+7691841: java.io.PipedOutputStream@c5421e7 <- PipedOutputStream()
+7691847: java.io.PipedInputStream@1d10194 <- PipedInputStream(output_stream=java.io.PipedOutputStream@c5421e7)
+7691898: java.io.PipedOutputStream@c5421e7 :: close()
+7691907: java.io.PipedInputStream@1d10194 :: close()
+7702045: java.io.PipedOutputStream@2c1b256 <- PipedOutputStream()
+7702050: java.io.PipedInputStream@55352d7 <- PipedInputStream(output_stream=java.io.PipedOutputStream@2c1b256)
+7702101: java.io.PipedOutputStream@2c1b256 :: close()
+7702107: java.io.PipedInputStream@55352d7 :: close()
+7712225: java.io.PipedOutputStream@6fcefeb <- PipedOutputStream()
+7712231: java.io.PipedInputStream@58df148 <- PipedInputStream(output_stream=java.io.PipedOutputStream@6fcefeb)
+7712276: java.io.PipedOutputStream@6fcefeb :: close()
+7712287: java.io.PipedInputStream@58df148 :: close()
+7722434: java.io.PipedOutputStream@a170ad5 <- PipedOutputStream()
+7722439: java.io.PipedInputStream@6dab2ea <- PipedInputStream(output_stream=java.io.PipedOutputStream@a170ad5)
+7722485: java.io.PipedOutputStream@a170ad5 :: close()
+7722496: java.io.PipedInputStream@6dab2ea :: close()
+7732620: java.io.PipedOutputStream@e5457af <- PipedOutputStream()
+7732625: java.io.PipedInputStream@cfad7bc <- PipedInputStream(output_stream=java.io.PipedOutputStream@e5457af)
+7732698: java.io.PipedOutputStream@e5457af :: close()
+7732706: java.io.PipedInputStream@cfad7bc :: close()
+7742812: java.io.PipedOutputStream@139a4f9 <- PipedOutputStream()
+7742817: java.io.PipedInputStream@7654c3e <- PipedInputStream(output_stream=java.io.PipedOutputStream@139a4f9)
+7742865: java.io.PipedOutputStream@139a4f9 :: close()
+7742877: java.io.PipedInputStream@7654c3e :: close()
+7753019: java.io.PipedOutputStream@250be69 <- PipedOutputStream()
+7753024: java.io.PipedInputStream@49b40ee <- PipedInputStream(output_stream=java.io.PipedOutputStream@250be69)
+7753126: java.io.PipedOutputStream@250be69 :: close()
+7753137: java.io.PipedInputStream@49b40ee :: close()
+7763231: java.io.PipedOutputStream@24cb923 <- PipedOutputStream()
+7763235: java.io.PipedInputStream@f25ae20 <- PipedInputStream(output_stream=java.io.PipedOutputStream@24cb923)
+7763280: java.io.PipedOutputStream@24cb923 :: close()
+7763287: java.io.PipedInputStream@f25ae20 :: close()
+7773423: java.io.PipedOutputStream@d2d414d <- PipedOutputStream()
+7773428: java.io.PipedInputStream@4b87402 <- PipedInputStream(output_stream=java.io.PipedOutputStream@d2d414d)
+7773480: java.io.PipedOutputStream@d2d414d :: close()
+7773487: java.io.PipedInputStream@4b87402 :: close()
+7783601: java.io.PipedOutputStream@7c0b967 <- PipedOutputStream()
+7783606: java.io.PipedInputStream@2368314 <- PipedInputStream(output_stream=java.io.PipedOutputStream@7c0b967)
+7783651: java.io.PipedOutputStream@7c0b967 :: close()
+7783657: java.io.PipedInputStream@2368314 :: close()
+7793775: java.io.PipedOutputStream@109bff1 <- PipedOutputStream()
+7793780: java.io.PipedInputStream@f0857d6 <- PipedInputStream(output_stream=java.io.PipedOutputStream@109bff1)
+7793837: java.io.PipedOutputStream@109bff1 :: close()
+7793847: java.io.PipedInputStream@f0857d6 :: close()
+7804004: java.io.PipedOutputStream@5accf6b <- PipedOutputStream()
+7804010: java.io.PipedInputStream@9891ac8 <- PipedInputStream(output_stream=java.io.PipedOutputStream@5accf6b)
+7804058: java.io.PipedOutputStream@5accf6b :: close()
+7804063: java.io.PipedInputStream@9891ac8 :: close()
+7814340: java.io.PipedOutputStream@264de55 <- PipedOutputStream()
+7814345: java.io.PipedInputStream@b6ec06a <- PipedInputStream(output_stream=java.io.PipedOutputStream@264de55)
+7814389: java.io.PipedOutputStream@264de55 :: close()
+7814394: java.io.PipedInputStream@b6ec06a :: close()
+7824522: java.io.PipedOutputStream@26ff2f <- PipedOutputStream()
+7824539: java.io.PipedInputStream@fb5293c <- PipedInputStream(output_stream=java.io.PipedOutputStream@26ff2f)
+7824710: java.io.PipedOutputStream@26ff2f :: close()
+7824717: java.io.PipedInputStream@fb5293c :: close()
+7834861: java.io.PipedOutputStream@45d0079 <- PipedOutputStream()
+7834866: java.io.PipedInputStream@85441be <- PipedInputStream(output_stream=java.io.PipedOutputStream@45d0079)
+7834913: java.io.PipedOutputStream@45d0079 :: close()
+7834925: java.io.PipedInputStream@85441be :: close()
+
+[call_provideDiagnosisKeys_serial.js @ de.rki.coronawarnapp]
+creating dk array
+creating default exposure configuration
+looking for en instance
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null

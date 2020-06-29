@@ -1,0 +1,43 @@
+creating dk array
+creating default exposure configuration
+looking for en instance
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+on success listener: null
+on success listener: null
+on success listener: null
+on success listener: null
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
+on success listener: null
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
+on success listener: null
+on success listener: null
+on success listener: null
+on success listener: null
+on success listener: null

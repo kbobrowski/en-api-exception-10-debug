@@ -1,0 +1,42 @@
+[trace_pipe.js @ com.google.android.gms.persistent]
+8043821: java.io.PipedOutputStream@9efac69 <- PipedOutputStream()
+8043836: java.io.PipedInputStream@3ca96ee <- PipedInputStream(output_stream=java.io.PipedOutputStream@9efac69)
+8044080: java.io.PipedOutputStream@9efac69 :: close()
+8044083: java.io.PipedInputStream@3ca96ee :: close()
+8044183: java.io.PipedOutputStream@12a95c6 <- PipedOutputStream()
+8044187: java.io.PipedInputStream@5e84987 <- PipedInputStream(output_stream=java.io.PipedOutputStream@12a95c6)
+8044236: java.io.PipedOutputStream@12a95c6 :: close()
+8044240: java.io.PipedInputStream@5e84987 :: close()
+8044315: java.io.PipedOutputStream@200979e <- PipedOutputStream()
+8044320: java.io.PipedInputStream@aa6e27f <- PipedInputStream(output_stream=java.io.PipedOutputStream@200979e)
+8044418: java.io.PipedOutputStream@200979e :: close()
+8044422: java.io.PipedInputStream@aa6e27f :: close()
+8044488: java.io.PipedOutputStream@8a9fc76 <- PipedOutputStream()
+8044493: java.io.PipedInputStream@490a277 <- PipedInputStream(output_stream=java.io.PipedOutputStream@8a9fc76)
+8044665: java.io.PipedOutputStream@8a9fc76 :: close()
+8044676: java.io.PipedInputStream@490a277 :: close()
+8044754: java.io.PipedOutputStream@9d0244e <- PipedOutputStream()
+8044764: java.io.PipedInputStream@b03696f <- PipedInputStream(output_stream=java.io.PipedOutputStream@9d0244e)
+8044817: java.io.PipedOutputStream@9d0244e :: close()
+8044822: java.io.PipedInputStream@b03696f :: close()
+8044936: java.io.PipedOutputStream@ab43cfe <- PipedOutputStream()
+8044941: java.io.PipedInputStream@3c78c5f <- PipedInputStream(output_stream=java.io.PipedOutputStream@ab43cfe)
+8044957: java.io.PipedInputStream@3c78c5f :: close()
+8044963: java.io.PipedOutputStream@ab43cfe :: close()
+
+[call_provideDiagnosisKeys_serial.js @ de.rki.coronawarnapp]
+creating dk array
+creating default exposure configuration
+looking for en instance
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on success listener: null
+provideDiagnosisKeys(keys=[/data/local/tmp/key-export/81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip])
+on failure listener: com.google.android.gms.common.api.ApiException: 10: Unable to validate key file signature: Pipe is closed
