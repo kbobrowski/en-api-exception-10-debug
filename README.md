@@ -13,7 +13,7 @@ Bug description
 /* class aion */
 public static void a(InputStream inputStream) {
   byte[] buffer = new byte[16];
-  byte[] validHeader = "EK Export v1    ".getBytes(StandardCharsets.UTF_8)
+  byte[] validHeader = "EK Export v1    ".getBytes(StandardCharsets.UTF_8);
   if (inputStream.read(buffer) == 16) {
     if (!Arrays.equals(buffer, validHeader)) {
       throw new IOException("Unsupported file format");
