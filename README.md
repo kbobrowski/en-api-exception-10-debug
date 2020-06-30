@@ -24,7 +24,7 @@ public static void a(InputStream inputStream) {
 }
 ```
 
-When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [pipe_0ms_delay_read.txt](pipe_0ms_delay_read.txt)) and `IOException("Invalid file header length")` is thrown.
+When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [pipes_0ms_delay_read.txt](pipes_0ms_delay_read.txt)) and `IOException("Invalid file header length")` is thrown.
 
 This exception is caught in `aiob.call()` and as a result `PipedInputStream` is closed early. `PipedOutputStream` is still open and sending data, which results in `Pipe is closed` exception. The latter exception is passed further to `onFailureListener` of `provideDiagnosisKeys`.
 
@@ -82,7 +82,7 @@ File description
 - `adb_bugreport.txt` - full bug report which captures ApiException(10) [not published on GitHub]
 - [`stack_trace.txt`](stack_trace.txt) - stack trace of "Pipe is closed" error, result of `trace_exception.js`
 - [`all_exceptions.txt`](all_exceptions.txt) - result of `trace_all_exceptions.js`
-- [`pipes_0ms_delay_read.txt`](pipe_0ms_delay_read.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay and tracing `PipedInputStream.read(byte[] buffer)`
+- [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay and tracing `PipedInputStream.read(byte[] buffer)`
 - [`pipes_10000ms_delay.txt`](pipes_10000ms_delay.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 10000 ms delay
 
 How to reproduce
