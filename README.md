@@ -24,7 +24,7 @@ public static void a(InputStream inputStream) {
 }
 ```
 
-When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [pipes_0ms_delay_read.txt](pipes_0ms_delay_read.txt)) and `IOException("Invalid file header length")` is thrown.
+When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt)) and `IOException("Invalid file header length")` is thrown.
 
 This exception is caught in `aiob.call()` and as a result `PipedInputStream` is closed early. `PipedOutputStream` is still open and sending data, which results in `Pipe is closed` exception. The latter exception is passed further to `onFailureListener` of `provideDiagnosisKeys`.
 
