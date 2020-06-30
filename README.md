@@ -13,7 +13,7 @@ Bug description
 /* class aion */
 public static void a(InputStream inputStream) {
   byte[] buffer = new byte[16];
-  byte[] validHeader = "EK Export v1    ".getBytes(StandardCharsets.UTF_8)
+  byte[] validHeader = "EK Export v1    ".getBytes(StandardCharsets.UTF_8);
   if (inputStream.read(buffer) == 16) {
     if (!Arrays.equals(buffer, validHeader)) {
       throw new IOException("Unsupported file format");
@@ -24,7 +24,7 @@ public static void a(InputStream inputStream) {
 }
 ```
 
-When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt)) and `IOException("Invalid file header length")` is thrown.
+When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [`trace_all.txt`](trace_all.txt)) and `IOException("Invalid file header length")` is thrown.
 
 This exception is caught in `aiob.call()` and as a result `PipedInputStream` is closed early. `PipedOutputStream` is still open and sending data, which results in `Pipe is closed` exception. The latter exception is passed further to `onFailureListener` of `provideDiagnosisKeys`.
 
@@ -69,6 +69,7 @@ File description
 - [`trace_all_exceptions.js`](trace_all_exceptions.js) - trace all exceptions initialized with string
 - [`trace_pipe.js`](trace_pipe.js) - monitor operations with PipedInputStream / PipedOutputStream inside GMS
 - [`input_stream_read_patch.js`](input_stream_read_patch.js) - patch input stream according to the description above
+- [`trace_all.js`](trace_all.js) - trace both Piped and File streams + exceptions
 
 #### input files
 - `81a2d7a0-6d15-31eb-b89b-8b648347aaaa.zip` - file which is passed to `provideDiagnosisKeys` as single-element batch (these are Diagnosis Keys published by Germany for one day) [not published on GitHub]
@@ -82,6 +83,7 @@ File description
 - [`all_exceptions.txt`](all_exceptions.txt) - result of `trace_all_exceptions.js`
 - [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay and tracing `PipedInputStream.read(byte[] buffer)`
 - [`pipes_10000ms_delay.txt`](pipes_10000ms_delay.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 10000 ms delay
+- [`trace_all.txt`](trace_all.js) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, with 0 ms delay
 
 How to reproduce
 ----------------
