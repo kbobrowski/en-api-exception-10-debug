@@ -35,7 +35,6 @@ Possible solution is to use `PipedInputStream.read()` instead. Following impleme
 
 ```javascript
 inputStream.read.overload('[B').implementation = function(buffer) {
-    var t = new Date();
     var bufferIndex = 0;
     // patch only PipedInputStream
     if (this.toString().includes("Piped")) {
@@ -49,7 +48,6 @@ inputStream.read.overload('[B').implementation = function(buffer) {
                 break;
             }
         }
-        console.log((t.getTime() % 10000000) + ": " + this + " :: read(buffer=" + buffer + ") = " + bufferIndex)
     } else {
         bufferIndex = this.read(buffer);
     }
