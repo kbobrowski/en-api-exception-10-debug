@@ -83,7 +83,7 @@ File description
 - [`all_exceptions.txt`](all_exceptions.txt) - result of `trace_all_exceptions.js`
 - [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay and tracing `PipedInputStream.read(byte[] buffer)`
 - [`pipes_10000ms_delay.txt`](pipes_10000ms_delay.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 10000 ms delay
-- [`trace_all.txt`](trace_all.js) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, with 0 ms delay
+- [`trace_all.txt`](trace_all.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, with 0 ms delay
 
 How to reproduce
 ----------------
