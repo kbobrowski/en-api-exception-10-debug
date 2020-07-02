@@ -7,7 +7,7 @@ Device info
 Bug description
 ---------------
 
-`PipedInputStream.read(byte[] buffer)` seems to be broken. It is used for checking that header of Diagnosis Key file is equal to padded `EK Export v1    `:
+`PipedInputStream.read(byte[] buffer)` can behave in an unexpected way. It is used for checking that header of Diagnosis Key file is equal to padded `EK Export v1    `:
 
 ```java
 /* class aion */
@@ -24,7 +24,7 @@ public static void a(InputStream inputStream) {
 }
 ```
 
-When `provideDiagnosisKeys` is executed frequently then `read(byte[] buffer)` method sometimes returns number of read bytes less than 16 (see [`trace_all.txt`](trace_all.txt)) and `IOException("Invalid file header length")` is thrown.
+If `read(byte[] buffer)` method is called too early (before required number of bytes has been written by `PipedOutputStream`) then it will not wait for missing bytes and just return current count (it just waits for the first byte). This results in `IOException("Invalid file header length")`. Compare [`trace_all_correct.txt`](trace_all_correct.txt) and [`trace_all_error.txt`](trace_all_error.txt).
 
 This exception is caught in `aiob.call()` and as a result `PipedInputStream` is closed early. `PipedOutputStream` is still open and sending data, which results in `Pipe is closed` exception. The latter exception is passed further to `onFailureListener` of `provideDiagnosisKeys`.
 
@@ -83,7 +83,8 @@ File description
 - [`all_exceptions.txt`](all_exceptions.txt) - result of `trace_all_exceptions.js`
 - [`pipes_0ms_delay_read.txt`](pipes_0ms_delay_read.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 0 ms delay and tracing `PipedInputStream.read(byte[] buffer)`
 - [`pipes_10000ms_delay.txt`](pipes_10000ms_delay.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_pipe.js` in parallel, with 10000 ms delay
-- [`trace_all.txt`](trace_all.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, with 0 ms delay
+- [`trace_all_correct.txt`](trace_all_correct.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, when it behaves as expected
+- [`trace_all_error.txt`](trace_all_error.txt) - result of running `call_provideDiagnosisKeys_serial.js` and `trace_all.js` in parallel, when it behaves in an unexpected way
 
 How to reproduce
 ----------------

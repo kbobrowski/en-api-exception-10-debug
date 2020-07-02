@@ -1,0 +1,28 @@
+7218406: java.io.PipedOutputStream@b7acb5a <- PipedOutputStream()
+7218412: java.io.PipedInputStream@eda318b <- PipedInputStream(output_stream=java.io.PipedOutputStream@b7acb5a)
+7218460: java.io.PipedInputStream@eda318b :: read(buffer={instance=[B@a81a268, length=16})
+7218470: java.io.PipedOutputStream@b7acb5a :: write(buffer={length=4096}, offset=0, length=4096)
+7218476: java.io.PipedInputStream@eda318b :: read(buffer={instance=[B@a81a268, length=16}, offset=0, length=16)
+69
+System.arraycopy(src=[object Object], srcPos=0, dest=[B@a81a268, destPost=0, length=1)
+7218476: java.io.PipedInputStream@eda318b :: read(buffer={instance=[B@a81a268, length=16}, offset=0, length=16) = 1
+75
+32
+69
+7218520: Exception: Invalid file header length
+120
+112
+111
+114
+116
+32
+118
+49
+32
+32
+32
+32
+7218828: java.io.PipedInputStream@eda318b :: close()
+7218857: Exception: Pipe is closed
+7218926: java.io.PipedOutputStream@b7acb5a :: close()
+7218932: Exception: Unable to validate key file signature: Pipe is closed

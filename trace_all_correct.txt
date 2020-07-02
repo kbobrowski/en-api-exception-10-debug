@@ -1,0 +1,25 @@
+7177597: java.io.PipedOutputStream@7624820 <- PipedOutputStream()
+7177610: java.io.PipedInputStream@f92a5d9 <- PipedInputStream(output_stream=java.io.PipedOutputStream@7624820)
+7177617: java.io.PipedInputStream@f92a5d9 :: read(buffer={instance=[B@418a67f, length=16})
+7177630: java.io.PipedInputStream@f92a5d9 :: read(buffer={instance=[B@418a67f, length=16}, offset=0, length=16)
+7177624: java.io.PipedOutputStream@7624820 :: write(buffer={length=4096}, offset=0, length=4096)
+69
+75
+32
+69
+120
+112
+111
+114
+116
+32
+118
+49
+32
+32
+32
+32
+69
+69
+System.arraycopy(src=[object Object], srcPos=0, dest=[B@418a67f, destPost=0, length=16)
+7177630: java.io.PipedInputStream@f92a5d9 :: read(buffer={instance=[B@418a67f, length=16}, offset=0, length=16) = 16
